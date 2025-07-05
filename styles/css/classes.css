@@ -220,3 +220,7 @@
 .hidescroll::-webkit-scrollbar {
     display: none;
 }
+
+.gry1{
+    background: rgb(25, 25, 25);
+}

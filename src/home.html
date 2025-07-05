@@ -1,84 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>CodeX Initiative - Home</title>
-		<link rel="stylesheet" href="../styles/css/main.css">
-		<link rel="stylesheet" href="../styles/css/classes.css">
-		<link rel="stylesheet" href="../styles/css/animations.css">
-		<link rel="stylesheet" href="../styles/css/jshelper.css">
-		<link rel="stylesheet" href="../styles/css/sidescroll.css">
-		<script src="https://unpkg.com/lucide@latest"></script>
-	</head>
-	<body>
-		<!-- Navigation Bar -->
-		<header id="navigation">
-			<a href="home.html" class="nav-button"  id="current-page">
-				<section><i data-lucide="home" class="icon"></i>Home</section>
-			</a>
-			<a href="about.html" class="nav-button">
-				<section><i data-lucide="user" class="icon"></i>About</section>
-			</a>
-			<a href="portfolio.html" class="nav-button">
-				<section><i data-lucide="briefcase" class="icon"></i>Projects</section>
-			</a>
-			<a href="news.html" class="nav-button">
-				<section><i data-lucide="newspaper" class="icon"></i>News</section>
-			</a>
-			<a href="projects.html" class="nav-button">
-				<section><i data-lucide="Layout Dashboard" class="icon"></i>Projects</section>
-			</a>
-		</header>
-		<!-- Hero Section -->
-		<section id="title-container">
-			<div class="stars" id="stars"></div>
-			<div class="stars" id="stars2"></div>
-			<div class="stars" id="stars3"></div>
-			<div id="title" class="float ani-slow pulse">
-				<span>CodeX</span><br>
-				<span>Initiative</span>
-			</div>
-		</section>
-		<hr class="hr-double">
-		<!-- Welcome Section -->
-		<div id="content">
-			<div class="flexr alignc justc gap3 p3 br2 hov-doubleline hov-glow hov-lift">
-				<img src="../assets/profile.jpg" alt="Arnav's Profile Picture" class="br2 w4 hov-glow">
-				<section class="p2">
-					<h3>Welcome,</h3>
-					<p>
-						I'm Arnav, a student currently in 8th grade.<br> 
-						I'm a passionate developer, researcher, and problem-solver. I love creating and learning new things, whether it's software, AI models, engineering projects, or music. <br>
-						<br>
-						In my free time, I love to explore new ideas and try to learn as much as I can. <br>
-						Feel free to explore around my site!
-					</p>
-					<a href="about.html" class=" btn btn-future txtdcn float">Learn More</a>
-					<a href="portfolio.html" class=" btn btn-future txtdcn float">Portfolio</a>
-				</section>
-			</div>
-		</div>
-		<hr class="hr-double">
-		<footer class="flexcol alignc p4 wv100 footer-bg br2">
-			<h5 class="txtl m0 pulse">
-			Let's Connect</h3>
-			<p class="txtm txtc w75 mb2">Feel free to reach out for any questions!</p>
-			<div class="flexr gap4">
-				<a class="txtdcn btn btn-dark flexc p2 hov-scale hov-doubleline" href="https://github.com/Arnav-Saraf-Official">
-				<img src="../assets/github-mark.svg" class="wv3 invert" alt="GitHub Logo">
-				<span>GitHub</span>
-				</a>
-				<a class="txtdcn btn btn-dark flexc p2 hov-scale hov-doubleline" href="mailto:reacharnavsaraf@gmail.com">
-				<img src="../assets/email.svg" class="wv3 invert" alt="Email Icon">
-				<span>Email</span>
-				</a>
-			</div>
-			<p class="txts mt3 opacity-50">&copy; 2025 Arnav Saraf. All rights reserved.</p>
-		</footer>
-		<!-- JavaScript -->
-		<script src="../styles/js/stars.js"></script>
-		<script src="../styles/js/jstyles.js"></script>
-		<script src="../js/side-scroll.js"></script>
-	</body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeX Initiative</title>
+  <link rel="stylesheet" href="../styles/css/main.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Poppins:wght@300;400;600&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">CodeX Initiative</div>
+    <nav>
+      <ul>
+        <li><a href="#about"><i data-lucide="info"></i> About</a></li>
+        <li><a href="#events"><i data-lucide="calendar-days"></i> Events</a></li>
+        <li><a href="#team"><i data-lucide="users"></i> Team</a></li>
+        <li><a href="#contact"><i data-lucide="mail"></i> Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Empowering the Future of Code</h1>
+        <p>Where ideas become innovation.</p>
+        <a href="#about" class="cta-btn">Learn More</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+      <h2>About CodeX</h2>
+      <p>CodeX Initiative is a student-led tech community that fosters innovation, learning, and real-world skills through projects, workshops, and collaboration.</p>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events section">
+      <h2>Our Events</h2>
+      <div class="cards">
+        <div class="card">
+          <i data-lucide="brain-circuit"></i>
+          <h3>AI Bootcamp</h3>
+          <p>Hands-on introduction to machine learning and AI concepts with real-world projects.</p>
+        </div>
+        <div class="card">
+          <i data-lucide="github"></i>
+          <h3>Hacktoberfest</h3>
+          <p>Open-source collaboration and GitHub contributions during October.</p>
+        </div>
+        <div class="card">
+          <i data-lucide="shield"></i>
+          <h3>CyberSecurity Week</h3>
+          <p>Learn ethical hacking, network security, and digital forensics.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team section">
+      <h2>Meet the Team</h2>
+      <div class="cards">
+        <div class="card">
+          <i data-lucide="user"></i>
+          <h3>Jane Doe</h3>
+          <p>President & Backend Developer</p>
+        </div>
+        <div class="card">
+          <i data-lucide="layout-template"></i>
+          <h3>John Smith</h3>
+          <p>Lead Designer & Frontend Dev</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+      <h2>Contact Us</h2>
+      <p>Have questions or want to join? Reach out at <a href="mailto:codex@university.edu"><i data-lucide="mail"></i> codex@university.edu</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 CodeX Initiative. All rights reserved.</p>
+  </footer>
+
+  <!-- Initialize Lucide Icons -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      lucide.createIcons();
+    });
+  </script>
+</body>
 </html>
