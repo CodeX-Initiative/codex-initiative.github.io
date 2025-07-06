@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>CodeX Initiative</title>
   <link rel="stylesheet" href="../styles/css/main.css" />
+  <link rel="stylesheet" href="../styles/css/classes.css" />
+  <link rel="icon" href="../assets/logo_X_small.png" />
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Poppins:wght@300;400;600&family=Share+Tech+Mono&display=swap" rel="stylesheet">
@@ -13,15 +15,32 @@
   <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
+  <aside id="side-menu" class="side-menu">
+  <button class="close-btn" aria-label="Close Menu"><i data-lucide="x"></i></button>
+  <nav>
+    <ul>
+      <li><a href="index.html"><i data-lucide="home"></i> Home</a></li>
+      <li><a href="team.html"><i data-lucide="users"></i> Team</a></li>
+      <li><a href="chapters.html"><i data-lucide="map-pin"></i> Chapters</a></li>
+      <li><a href="start-a-chapter.html"><i data-lucide="rocket"></i> Start a Chapter</a></li>
+      <li><a href="contact.html"><i data-lucide="mail"></i> Contact</a></li>
+    </ul>
+  </nav>
+</aside>
 
   <!-- Header -->
   <header>
+	<!-- Hamburger Button -->
+<button id="menu-toggle" class="menu-btn" aria-label="Open Menu">
+  <i data-lucide="menu"></i>
+</button>
+
     <div class="logo">CodeX Initiative</div>
     <nav>
       <ul>
         <li><a href="#about"><i data-lucide="info"></i> About</a></li>
-        <li><a href="#events"><i data-lucide="calendar-days"></i> Events</a></li>
-        <li><a href="#team"><i data-lucide="users"></i> Team</a></li>
+        <li><a href="#workflow"><i data-lucide="workflow"></i> Workflow</a></li>
+        <li><a href="team.html"><i data-lucide="users"></i> Team</a></li>
         <li><a href="#contact"><i data-lucide="mail"></i> Contact</a></li>
       </ul>
     </nav>
@@ -38,55 +57,83 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about section">
-      <h2>About CodeX</h2>
-      <p>CodeX Initiative is a student-led tech community that fosters innovation, learning, and real-world skills through projects, workshops, and collaboration.</p>
+    <section id="about" class="about bk1 section flexr flexse alignc">
+      <div class="about-image">
+        <img src="../assets/logo_full.png" alt="CodeX Logo" style="width: 100%; max-width: 280px; border-radius: 1vw;">
+      </div>
+
+      <div class="about-content" style="max-width: 600px;">
+        <h2>About CodeX</h2>
+        <p>
+          CodeX Initiative is a student-led tech community that fosters innovation, hands-on learning, and real-world problem solving through collaborative development.
+          We aim to bridge the gap between theory and practice for the next generation of tech leaders.
+        </p>
+        <div class="about-buttons flex justc" style="margin-top: 1.5em; gap: 1em;">
+          <a href="#workflow" class="cta-btn">Our Workflow</a>
+          <a href="team.html" class="cta-btn alt">Meet the Team</a>
+        </div>
+      </div>
     </section>
 
-    <!-- Events Section -->
-    <section id="events" class="events section">
-      <h2>Our Events</h2>
+    <!-- Workflow Section -->
+    <section id="workflow" class="workflow section bk2">
+      <h2>How We Work</h2>
       <div class="cards">
         <div class="card">
-          <i data-lucide="brain-circuit"></i>
-          <h3>AI Bootcamp</h3>
-          <p>Hands-on introduction to machine learning and AI concepts with real-world projects.</p>
+          <i data-lucide="search-code"></i>
+          <h3>Research</h3>
+		  <br>
+          <p>We start by identifying real-world problems, diving deep into their context, and planning the best approach to solve them effectively.</p>
         </div>
         <div class="card">
           <i data-lucide="github"></i>
-          <h3>Hacktoberfest</h3>
-          <p>Open-source collaboration and GitHub contributions during October.</p>
+          <h3>Collaborative Development</h3>
+		  <br>
+          <p>Using GitHub, our team collaborates on building open-source software solutions with clean code, version control, and community contribution.</p>
         </div>
         <div class="card">
-          <i data-lucide="shield"></i>
-          <h3>CyberSecurity Week</h3>
-          <p>Learn ethical hacking, network security, and digital forensics.</p>
+          <i data-lucide="rocket"></i>
+          <h3>Deployment</h3>
+		  <br>
+          <p>We deploy working solutions in real-world environments, ensuring our work is not just theoretical but impactful and accessible.</p>
         </div>
       </div>
     </section>
 
-    <!-- Team Section -->
-    <section id="team" class="team section">
-      <h2>Meet the Team</h2>
-      <div class="cards">
-        <div class="card">
-          <i data-lucide="user"></i>
-          <h3>Jane Doe</h3>
-          <p>President & Backend Developer</p>
-        </div>
-        <div class="card">
-          <i data-lucide="layout-template"></i>
-          <h3>John Smith</h3>
-          <p>Lead Designer & Frontend Dev</p>
-        </div>
-      </div>
-    </section>
+<section id="join" class="section flexcol alignc justc bk1" style="gap: 2rem; padding: 2.5rem 1rem;">
+	<span><h2>Join CodeX Initiative</h2>
+	<div class="info-text bk3" style="max-width: 700px; text-align: center; padding: 1.5rem; border-radius: 10px; margin-top:1vh;">
+	<p>
+      CodeX Initiative is an organization created by students, for students. Check with your high school to see
+      if a CodeX chapter already exists. If not, you can always start one!
+      Visit the links below to learn more about starting a chapter or explore which high schools are already part
+      of the initiative.
+    </p>
+  </div>
+</span>
+  <div class="flex flexsa wrap" style="gap: 1rem; flex-wrap: wrap;">
+    <a class="cta-btn" href="chapters.html">View Existing Chapters</a>
+    <a class="cta-btn alt" href="start-a-chapter.html">Start a New Chapter</a>
+  </div>
+</section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact section">
-      <h2>Contact Us</h2>
-      <p>Have questions or want to join? Reach out at <a href="mailto:codex@university.edu"><i data-lucide="mail"></i> codex@university.edu</a></p>
-    </section>
+    <section id="contact" class="contact section bk3">
+  <h2>Contact Us</h2>
+  <p>Questions? Reach out to us at <a href="mailto:codeXinitiative@gmail.com">codeXinitiative@gmail.com</a></p>
+
+  <div class="social-icons flex justc" style="margin-top: 1.5em; gap: 1.5em;">
+    <a href="mailto:codeXinitiative@gmail.com" class="social-btn" aria-label="Email">
+      <i data-lucide="mail"></i>
+    </a>
+    <a href="https://instagram.com/codeXinitiative" target="_blank" class="social-btn" aria-label="Instagram">
+      <i data-lucide="instagram"></i>
+    </a>
+    <a href="https://github.com/codeX-initiative" target="_blank" class="social-btn" aria-label="GitHub">
+      <i data-lucide="github"></i>
+    </a>
+  </div>
+</section>
   </main>
 
   <footer>
@@ -99,5 +146,7 @@
       lucide.createIcons();
     });
   </script>
+
+  <script src="../js/menu.js"></script>
 </body>
 </html>

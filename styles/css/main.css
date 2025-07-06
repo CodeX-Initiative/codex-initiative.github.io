@@ -1,4 +1,5 @@
-/* Reset and base styling */
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -7,28 +8,43 @@
 
 html {
   background-color: #001F3F;
-    
-}
-html, body {
-  height: 100%;
-  font-family: 'Poppins', sans-serif;
-
-  color: #E6F1FF;
-  line-height: 1.6;
-  overflow-x: hidden;
   scroll-behavior: smooth;
 }
 
+html, body {
+  height: 100%;
+  font-family: 'Lexend', sans-serif;
+  color: #E6F1FF;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #020e1c;
+}
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(45deg, #00FFFF, #00bbbb);
+  border-radius: 1px;
+  transition: border-radius 0.3s ease-in-out;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-image: linear-gradient(45deg, #00aaFF, #00aabb);
+  border-radius: 6px;
+}
+
+/* Body background */
 body {
-  background-image: 
-    url('https://www.transparenttextures.com/patterns/cubes.png');
-    background-attachment: fixed;
+  background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+  background-attachment: fixed;
   background-repeat: repeat;
   overflow-y: auto;
 }
 
 main {
-  /* background-color: rgba(25, 25, 25, 0.85); */
   padding-bottom: 4em;
 }
 
@@ -46,11 +62,12 @@ header {
 }
 
 .logo {
-  font-family: 'Share Tech Mono', monospace;
+  font-family: 'Ubuntu', monospace;
   font-size: 1.8em;
   color: #00FFFF;
 }
 
+/* Top nav links */
 nav ul {
   display: flex;
   list-style: none;
@@ -88,12 +105,14 @@ nav ul li a:hover {
   color: #8B8B8B;
 }
 
+/* CTA Button */
 .cta-btn {
   margin-top: 1.5em;
   display: inline-block;
   padding: 0.8em 1.8em;
   background-color: #00FFFF;
-  color: #0D1117;
+  color: #020e1c;
+  text-decoration: none;
   font-weight: bold;
   border-radius: 4px;
   transition: 0.3s ease;
@@ -101,6 +120,14 @@ nav ul li a:hover {
 .cta-btn:hover {
   background-color: #00cccc;
   box-shadow: 0 0 15px #00FFFF;
+}
+.cta-btn.alt {
+  background-color: transparent;
+  color: #00FFFF;
+  border: 2px solid #00FFFF;
+}
+.cta-btn.alt:hover {
+  background-color: rgba(0, 255, 255, 0.1);
 }
 
 /* Sections */
@@ -135,7 +162,7 @@ nav ul li a:hover {
   box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
 }
 
-/* Icon Styling */
+/* Lucide icons */
 i[data-lucide] {
   width: 20px;
   height: 20px;
@@ -144,12 +171,36 @@ i[data-lucide] {
   stroke: #00FFFF;
   stroke-width: 1.8;
 }
-
 .card i[data-lucide] {
   width: 40px;
   height: 40px;
   margin: 0 auto 10px auto;
   display: block;
+}
+
+/* Social buttons */
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #0D1117;
+  border: 1.5px solid #00FFFF;
+  color: #00FFFF;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.social-btn:hover {
+  background-color: #00FFFF;
+  color: #0D1117;
+  box-shadow: 0 0 10px #00FFFF;
+}
+.social-btn i[data-lucide] {
+  width: 22px;
+  height: 22px;
+  stroke-width: 1.8;
 }
 
 /* Contact */
@@ -166,4 +217,81 @@ footer {
   border-top: 1px solid #001F3F;
   font-size: 0.9em;
   color: #8B8B8B;
+}
+
+/* Side Menu */
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -260px;
+  width: 240px;
+  height: 100%;
+  background-color: #0D1117;
+  border-right: 1px solid #001F3F;
+  padding: 2rem 1.5rem;
+  z-index: 999;
+  transition: left 0.3s ease-in-out;
+  overflow-y: auto;
+}
+
+.side-menu.open {
+  left: 0;
+}
+
+.side-menu .close-btn {
+  background: none;
+  border: none;
+  color: #00FFFF;
+  font-size: 1.4em;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+}
+
+.side-menu header nav ul {
+  list-style: none;
+  gap: 1.5em;
+}
+
+.side-menu nav ul li {
+  margin: 1rem 0; 
+}
+.side-menu nav ul li a {
+  color: #E6F1FF;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+}
+
+/* Hamburger menu button */
+.menu-btn {
+  background: none;
+  border: none;
+  color: #00FFFF;
+  font-size: 1.6rem;
+  cursor: pointer;
+  margin-right: 1rem;
+  display: block; /* hidden by default */
+}
+
+/* Utility backgrounds */
+.bk1 { background-color: rgb(25, 25, 50); }
+.bk2 { background-color: rgb(15, 15, 25); }
+.bk3 { background-color: #020e1c; }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
 }
