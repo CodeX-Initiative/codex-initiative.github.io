@@ -17,31 +17,34 @@
 <body>
   <aside id="side-menu" class="side-menu">
   <button class="close-btn" aria-label="Close Menu"><i data-lucide="x"></i></button>
+  <h2>Let's Find What You Are Looking For.</h2>
   <nav>
     <ul>
-      <li><a href="index.html"><i data-lucide="home"></i> Home</a></li>
+      <li><a href="home.html"><i data-lucide="home"></i> Home</a></li>
       <li><a href="team.html"><i data-lucide="users"></i> Team</a></li>
       <li><a href="chapters.html"><i data-lucide="map-pin"></i> Chapters</a></li>
       <li><a href="start-a-chapter.html"><i data-lucide="rocket"></i> Start a Chapter</a></li>
-      <li><a href="contact.html"><i data-lucide="mail"></i> Contact</a></li>
+      <li><a href="home.html#contact"><i data-lucide="mail"></i> Contact</a></li>
     </ul>
   </nav>
 </aside>
 
   <!-- Header -->
   <header>
-	<!-- Hamburger Button -->
-<button id="menu-toggle" class="menu-btn" aria-label="Open Menu">
+	<span class="flex flexse alignc" style="margin:1.2em 2em; width:fit-content;">
+<button id="menu-toggle" class="menu-btn" aria-label="Open Menu" style="margin-right:10px;">
   <i data-lucide="menu"></i>
 </button>
 
+
     <div class="logo">CodeX Initiative</div>
-    <nav>
+	</span>
+    <nav style="margin-right:1vw;">
       <ul>
-        <li><a href="#about"><i data-lucide="info"></i> About</a></li>
-        <li><a href="#workflow"><i data-lucide="workflow"></i> Workflow</a></li>
-        <li><a href="team.html"><i data-lucide="users"></i> Team</a></li>
-        <li><a href="#contact"><i data-lucide="mail"></i> Contact</a></li>
+        <li><a href="#about"><i data-lucide="info" style="margin-right:2px"></i> About</a></li>
+        <li><a href="#workflow"><i data-lucide="workflow" style="margin-right:2px"></i> Workflow</a></li>
+        <li><a href="team.html"><i data-lucide="users" style="margin-right:2px"></i> Team</a></li>
+        <li><a href="#contact"><i data-lucide="mail" style="margin-right:2px"></i> Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -50,7 +53,7 @@
     <!-- Hero Section -->
     <section class="hero">
       <div class="hero-content">
-        <h1>Empowering the Future of Code</h1>
+        <h1>CodeX Initiative</h1>
         <p>Where ideas become innovation.</p>
         <a href="#about" class="cta-btn">Learn More</a>
       </div>
@@ -134,6 +137,7 @@
     </a>
   </div>
 </section>
+<div id="cursor">hfhhahdihas	</div>
   </main>
 
   <footer>
@@ -146,7 +150,8 @@
       lucide.createIcons();
     });
   </script>
-
+	
+	<script src="../js/cursor.js"></script>
   <script src="../js/menu.js"></script>
 </body>
 </html>
