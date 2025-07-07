@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeX Initiative</title>
+  <link rel="stylesheet" href="../styles/css/main.css" />
+  <link rel="stylesheet" href="../styles/css/classes.css" />
+  <link rel="icon" href="../assets/logo_X_small.png" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Poppins:wght@300;400;600&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <aside id="side-menu" class="side-menu">
+  <button class="close-btn" aria-label="Close Menu"><i data-lucide="x"></i></button>
+  <h2>Let's Find What You Are Looking For.</h2>
+  <nav>
+    <ul>
+      <li><a href="home.html"><i data-lucide="home"></i> Home</a></li>
+      <li><a href="team.html"><i data-lucide="users"></i> Team</a></li>
+      <li><a href="chapters.html"><i data-lucide="map-pin"></i> Chapters</a></li>
+      <li><a href="start-a-chapter.html"><i data-lucide="rocket"></i> Start a Chapter</a></li>
+      <li><a href="home.html#contact"><i data-lucide="mail"></i> Contact</a></li>
+    </ul>
+  </nav>
+</aside>
+
+  <!-- Header -->
+  <header>
+	<span class="flex flexse alignc" style="margin:1.2em 2em; width:fit-content;">
+<button id="menu-toggle" class="menu-btn" aria-label="Open Menu" style="margin-right:10px;">
+  <i data-lucide="menu"></i>
+</button>
+
+
+    <div class="logo">CodeX Initiative</div>
+	</span>
+    <nav style="margin-right:1vw;">
+      <ul>
+        <li><a href="#about"><i data-lucide="info" style="margin-right:2px"></i> About</a></li>
+        <li><a href="#workflow"><i data-lucide="workflow" style="margin-right:2px"></i> Workflow</a></li>
+        <li><a href="#join"><i data-lucide="users" style="margin-right:2px"></i> Join Us</a></li>
+        <li><a href="#contact"><i data-lucide="mail" style="margin-right:2px"></i> Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>CodeX Team Members</h1>
+        <p>The ones that make it happen.</p>
+        <a href="#about" class="cta-btn">Learn More</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about bk2 section flexcol alignc justc">
+
+      <div class="about-content" style="max-width: 600px;">
+        <h2>CodeX Leadership and Roles</h2>
+        <p>
+          CodeX Initiative is not only about students developing software solutions to problems around the world, 
+          but is also about collaberation, leadership, and community building. We believe that by offering multiple
+          leadership roles, we can provide opportunities for more students to develop their leadership skills and
+          become more prepared for real world challenges.
+        </p>
+
+        <div class="about-buttons flex justc" style="margin-top: 1.5em; gap: 1em;">
+          <a href="roles.html" class="cta-btn">More about leadership</a>
+          <a href="#team" class="cta-btn alt">Meet the Team</a>
+        </div>
+      </div>
+    </section>
+    <section id="team" class="flexcol section alignc flexse bk1">
+        <h2>Meet the Team</h2>
+        <div class="flexr alignc flexse bk2" style="padding:5vw; border-radius: 5vw; width: 100%;">
+            <img src="../assets/leadership/founder.jpg" alt="Leader 1" style="width:30vw; border-radius: 5vw;">
+            <div class="flexcol alignc justs" style="margin-left:5vw;">
+                <h3>Arnav Saraf - Founder and President</h3>
+                <p style="text-align: left;">
+                    Arnav Saraf is the founder and president of CodeX Initiative. He has a passion for coding and
+                    programming, and he is committed to making a positive impact on the world through technology.
+                    <br><br>
+                    Arnav's favorite subjects include computer and data science, AI, physics, areospace engineering,
+                    and more. He loves reading and learning more about new science discoveries and innovations.
+                    <br><br>
+                    Arnav is also a TXSEF finalist (twice)
+                </p>
+            </div>    
+        </div>
+    </section>
+    <div id="cursor"></div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 CodeX Initiative. All rights reserved.</p>
+  </footer>
+
+  <!-- Initialize Lucide Icons -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      lucide.createIcons();
+    });
+  </script>
+	
+	<script src="../js/cursor.js"></script>
+  <script src="../js/menu.js"></script>
+</body>
+</html>
