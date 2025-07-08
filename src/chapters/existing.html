@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeX Initiative</title>
+  <link rel="stylesheet" href="../../styles/css/main.css" />
+  <link rel="stylesheet" href="../../styles/css/classes.css" />
+  <link rel="icon" href="../../assets/logo_X_small.png" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Poppins:wght@300;400;600&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <aside id="side-menu" class="side-menu">
+  <button class="close-btn" aria-label="Close Menu"><i data-lucide="x"></i></button>
+  <h2>Let's Find What You Are Looking For.</h2>
+  <nav>
+    <ul>
+      <li><a href="../home.html"><i data-lucide="home"></i> Home</a></li>
+      <li><a href="../team.html"><i data-lucide="users"></i> Team</a></li>
+      <li><a href="existing.html"><i data-lucide="map-pin"></i> Chapters</a></li>
+      <li><a href="create.html"><i data-lucide="rocket"></i> Start a Chapter</a></li>
+      <li><a href="#contact"><i data-lucide="mail"></i> Contact</a></li>
+    </ul>
+  </nav>
+</aside>
+
+  <!-- Header -->
+  <header>
+	<span class="flex flexse alignc" style="margin:1.2em 2em; width:fit-content;">
+<button id="menu-toggle" class="menu-btn" aria-label="Open Menu" style="margin-right:10px;">
+  <i data-lucide="menu"></i>
+</button>
+
+
+    <div class="logo">CodeX Initiative</div>
+	</span>
+    <nav style="margin-right:1vw;">
+      <ul>
+        <li><a href="#existing"><i data-lucide="info" style="margin-right:2px"></i> About</a></li>
+        <li><a href="#join"><i data-lucide="users" style="margin-right:2px"></i> Join Us</a></li>
+        <li><a href="#contact"><i data-lucide="mail" style="margin-right:2px"></i> Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <h1>Existing CodeX Chapters</h1>
+        <p>The homes of next generation tech leaders.</p>
+        <a href="#existing" class="cta-btn">Learn More</a>
+      </div>
+    </section>
+
+    <!-- Workflow Section -->
+    <section id="existing" class="workflow section bk2">
+      <h2>Existing Chapters</h2>
+      <div class="cards">
+        <div class="card">
+            <a href="profile/westwood.html">  
+          <h3>Westwood HS</h3>
+          <img src="../../assets/chapters/westwood.svg" style="width:100%; border-radius:10px;">
+		  <br>
+          <p>Austin, Texas, USA</p>
+          <p>Founded in 2025-2026 School Year</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+<section id="join" class="section flexcol alignc justc bk1" style="gap: 2rem; padding: 2.5rem 1rem;">
+	<span><h2>Join CodeX Initiative</h2>
+	<div class="info-text bk3" style="max-width: 700px; text-align: center; padding: 1.5rem; border-radius: 10px; margin-top:1vh;">
+        <p> Currently, only high schools are permitted to open chapters as that is already enough work for our team.
+            CodeX will try and bring chapters the middle school when more resources become avalible.
+            <br>
+            If you want to know how you can start your own high school chapter, click the button below.
+        </p>
+  </div>
+</span>
+  <div class="flex flexsa wrap" style="gap: 1rem; flex-wrap: wrap;">
+    <a class="cta-btn alt" href="create.html">Start a New Chapter</a>
+  </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section bk3">
+  <h2>Contact Us</h2>
+  <p>Questions? Reach out to us at <a href="mailto:codeXinitiative@gmail.com">codeXinitiative@gmail.com</a></p>
+
+  <div class="social-icons flex justc" style="margin-top: 1.5em; gap: 1.5em;">
+    <a href="mailto:codeXinitiative@gmail.com" class="social-btn" aria-label="Email">
+      <i data-lucide="mail"></i>
+    </a>
+    <a href="https://instagram.com/codeXinitiative" target="_blank" class="social-btn" aria-label="Instagram">
+      <i data-lucide="instagram"></i>
+    </a>
+    <a href="https://github.com/codeX-initiative" target="_blank" class="social-btn" aria-label="GitHub">
+      <i data-lucide="github"></i>
+    </a>
+  </div>
+</section>
+<div id="cursor">hfhhahdihas	</div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 CodeX Initiative. All rights reserved.</p>
+  </footer>
+
+  <!-- Initialize Lucide Icons -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      lucide.createIcons();
+    });
+  </script>
+	
+	<script src="../../js/cursor.js"></script>
+  <script src="../../js/menu.js"></script>
+</body>
+</html>
