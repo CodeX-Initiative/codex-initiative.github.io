@@ -166,7 +166,7 @@ header nav ul li a:hover {
   font-size: 2.2em;
 }
 .section h3 {
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
   font-size: 1.7em;
 }
 
@@ -359,8 +359,8 @@ footer {
 }
 
 /* Utility backgrounds */
-.bk1 { background-color: rgb(25, 25, 50); }
-.bk2 { background-color: rgb(15, 15, 25); }
+.bk1 { background-color: rgb(0, 25, 50); }
+.bk2 { background-color: rgb(0, 15, 25); }
 .bk3 { background-color: #020e1c; }
 
 /* Responsive Styles */
@@ -379,7 +379,7 @@ footer {
   }
 }
 #cursor {
-  position: absolute;
+  position: fixed;
   width: 35px;
   height: 35px;
   pointer-events: none;

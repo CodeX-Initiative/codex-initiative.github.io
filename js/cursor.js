@@ -53,4 +53,16 @@ document.addEventListener("DOMContentLoaded", () => {
       cursor.style.height = "35px";
     });
   });
+  document.addEventListener("mousedown", () => {
+    cursor.classList.add("hover");
+    cursor.style.transform = "rotate(45deg)";
+    cursor.style.width = "35px";
+    cursor.style.height = "35px";
+  });
+  document.addEventListener("mouseup", () => {
+    cursor.classList.remove("hover");
+    cursor.style.transform = "rotate(0deg)";
+    cursor.style.width = "35px";
+    cursor.style.height = "35px";
+  });
 });
